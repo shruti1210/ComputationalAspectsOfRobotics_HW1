@@ -1,0 +1,49 @@
+        # TODO 1:
+        #  Eliminate pixels not in the image bounds or that are behind the image plane
+        # 0 <= voxel_u < image_width and 0 <= voxel_v < image_height
+        
+        #valid_voxel_v = np.array(voxel_v)
+        #bool_voxel_v = np.array(voxel_v)
+        #valid_voxel_u = np.array(voxel_u)
+        #bool_voxel_u = np.array(voxel_u)
+        #valid_depth = np.array(depth_image)
+        #bool_depth = np.array(depth_image)
+        #valid_voxel_z = np.array(voxel_z)
+        #bool_voxel_z = np.array(voxel_z)
+        #for i in range(len(voxel_u)):
+        #    if(voxel_u[i] < image_width and voxel_u[i] >= 0):
+        #        valid_voxel_u[i] = voxel_u[i]
+        #        bool_voxel_u[i] = True
+        #    else:
+        #        valid_voxel_u[i] = 0
+        #        bool_voxel_u[i] = False
+        
+        #for i in range(len(voxel_v)):
+        #    if(voxel_v[i] < image_height and voxel_v[i] >= 0):
+        #        valid_voxel_v[i] = voxel_v[i]
+        #        bool_voxel_v[i] = True
+        #    else:
+        #        valid_voxel_v[i] = 0
+        #        bool_voxel_v[i] = False
+
+        # TODO 2.1:
+        #  Get depths for valid coordinates u, v from the depth image. Zero elsewhere.
+        #for i in range(len(voxel_u)):
+        #    for j in range(len(voxel_v)):
+        #        if(voxel_u[i]>0 and voxel_v[j]>0):
+        #             if(depth_image[i,j]>0):
+        #                 valid_depth[i] = depth_image[i, j]
+        #                 bool_depth[i] = True
+        #             else:
+        #                valid_depth[i] = 0
+        #                bool_depth[i] = False
+
+        # TODO 2.3:
+        #  Filter out zero depth values 
+        #for i in range(len(voxel_z)):
+        #    if(voxel_z[i]>0):
+        #        valid_voxel_z[i] = voxel_z[i]
+        #        bool_voxel_z[i] = True
+        #    else:
+        #        valid_voxel_z[i] = 0
+        #        bool_voxel_z[i] = False
